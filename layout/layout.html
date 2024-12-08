@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Web dev cereater</a></div>
+            <ul class="links">
+                <li><a href="Hero">Home</a></li>
+                <li><a href="About">About</a></li>
+                <li><a href="Service">Services</a></li>
+                <li><a href="Contact">Contact</a></li>
+            </ul>
+            <a href="#" class="action_btn">GET START</a>
+             <div class="toggle_btn">
+                <li><img src="waiting.png"  ></li>
+             </div>
+        </div>
+    </div>
+    <div class="dropdown_menu">
+        <li><a href="Hero">Home</a></li>
+                <li><a href="About">About</a></li>
+                <li><a href="Service">Services</a></li>
+                <li><a href="Contact">Contact</a></li>
+                <li><a href=" #" class="action_btn">GET START</a></li>
+    </div>
+    </header>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick =function(){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+            toggleBtnIcon.classList = isOpen
+            
+        }
+    </script>
+
+    <div class="main">
+        <div class="div1" >
+            <p>HEllo i am left</p>
+        </div>
+        <div class="div2" >
+            <p>hello i am right</p>
+        </div>
+    </div>    
+</body>
+</html>
